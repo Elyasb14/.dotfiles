@@ -55,3 +55,8 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 
 require('lsp')
 vim.cmd.colorscheme('everforest')
+
+vim.pack.add({
+    'https://github.com/MeanderingProgrammer/render-markdown.nvim',
+})
+require('render-markdown').setup({}) -- only mandatory if you want to set custom options
