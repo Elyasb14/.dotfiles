@@ -3,11 +3,11 @@
     "position": "top",
     "height": 30,
     "modules-left": ["custom/hello"],
-    "modules-center": ["clock"],
-    "modules-right": [],
+    "modules-center": ["clock"], 
+    "modules-right": [ "cpu", "battery", "tray"],
 
     "custom/hello": {
-        "format": "✨ Hello World!"
+        "format": "from my dotfiles"
     },
 
     "clock": {
