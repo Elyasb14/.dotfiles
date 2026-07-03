@@ -1,0 +1,23 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+window#waybar {
+    background: #11111b;
+    color: #cdd6f4;
+}
+
+#custom-hello {
+    background: #89b4fa;
+    color: #11111b;
+    padding: 0 10px;
+    margin: 4px;
+    border-radius: 4px;
+}
+
+#clock {
+    padding: 0 10px;
+}

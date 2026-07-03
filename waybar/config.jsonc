@@ -1,0 +1,16 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "modules-left": ["custom/hello"],
+    "modules-center": ["clock"],
+    "modules-right": [],
+
+    "custom/hello": {
+        "format": "✨ Hello World!"
+    },
+
+    "clock": {
+        "format": "{:%H:%M:%S}"
+    }
+}
