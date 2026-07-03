@@ -18,6 +18,10 @@ window#waybar {
     border-radius: 4px;
 }
 
-#clock {
-    padding: 0 10px;
+#clock, #cpu, #memory, #network, #battery  {
+    background-color: #008000; /* Box background color */
+    border: 2px solid #88ccff;  /* Box border color and thickness */
+    border-radius: 10px;        /* Rounded corners for the box */
+    margin: 4px 6px;            /* Spacing around the box (Top/Bottom, Left/Right) */
+    padding: 0 10px;            /* Padding inside the box */
 }

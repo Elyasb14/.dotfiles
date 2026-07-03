@@ -2,15 +2,25 @@
     "layer": "top",
     "position": "top",
     "height": 30,
-    "modules-left": ["custom/hello"],
+    "modules-left": ["network"],
     "modules-center": ["clock"], 
-    "modules-right": [ "cpu", "battery", "tray"],
-
-    "custom/hello": {
-        "format": "from my dotfiles"
-    },
+    "modules-right": [  "cpu", "battery", "tray"],
 
     "clock": {
+        "interval": 1,
         "format": "{:%H:%M:%S}"
+    },
+
+    "cpu": {
+        "format": "CPU: {usage}%"
+    },
+
+    "network": {
+        "format": "{ifname}: {ipaddr}/{cidr} {signaldBm}dBm"
+    },
+
+    "battery": {
+        "format": "Battery: {capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""],
     }
 }
