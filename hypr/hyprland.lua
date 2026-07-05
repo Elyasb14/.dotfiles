@@ -277,6 +277,11 @@ hl.bind(
         action = "toggle",
     })
 )
+
+hl.bind("SUPER + S", 
+    hl.dsp.window.swap({next="left"})
+)
+
 hl.bind("SUPER + L", hl.dsp.exec_cmd("hyprlock"))
 hl.bind("SUPER + SHIFT + M", hl.dsp.exec_cmd("networkmanager"))
 hl.bind("SUPER + SHIFT + Q", hl.dsp.exec_cmd("firefox"))
