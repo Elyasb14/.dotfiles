@@ -4,7 +4,8 @@
     "height": 30,
     "modules-left": ["network"],
     "modules-center": ["clock"], 
-    "modules-right": [ "custom/ghostty", "custom/firefox", "pulseaudio", "cpu", "battery", "tray"],
+    "modules-right": [ "custom/openvpn",
+    "custom/wireguard","custom/ghostty", "custom/firefox", "pulseaudio", "cpu", "battery", "tray"],
 
     "custom/firefox": {
         "format": "🦊",
@@ -18,6 +19,22 @@
         "tooltip": "Launch Ghostty",
         "on-click": "sh -c 'ghostty & disown'"
     },
+
+"custom/openvpn": {
+    "interval": 3,
+    "format": "{}",
+    "exec": "nmcli -t -f NAME,STATE connection show --active | grep -q '^PNSN-VPN-Sea1:' && echo '🔒 OpenVPN Active' || echo '🔓 OpenVPN Off'",
+    "on-click": "nmcli connection show --active | grep -q '^PNSN-VPN-Sea1' && nmcli connection down PNSN-VPN-Sea1 || nmcli connection up PNSN-VPN-Sea1",
+    "tooltip": false
+},
+
+"custom/wireguard": {
+    "interval": 3,
+    "format": "{}",
+    "exec": "nmcli -t -f NAME,STATE connection show --active | grep -q '^WG-Elyas-MR241:' && echo '🛡️ WG Active' || echo '🌐 WG Off'",
+    "on-click": "nmcli connection show --active | grep -q '^WG-Elyas-MR241' && nmcli connection down WG-Elyas-MR241|| nmcli connection up WG-Elyas-MR241",
+    "tooltip": false
+},
 
   "clock": {
     "format": "{:%Y-%m-%d %H:%M}",

@@ -25,3 +25,11 @@ window#waybar {
     margin: 4px 6px;            /* Spacing around the box (Top/Bottom, Left/Right) */
     padding: 0 10px;            /* Padding inside the box */
 }
+
+#custom-openvpn,
+#custom-wireguard,
+#custom-ghostty,
+#custom-firefox {
+    margin-left: 10px;  /* Adjust this pixel value to change the spacing size */
+    margin-right: 10px; /* Adjust this pixel value to change the spacing size */
+}
