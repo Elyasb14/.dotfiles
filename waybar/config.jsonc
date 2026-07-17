@@ -19,11 +19,21 @@
         "on-click": "sh -c 'ghostty & disown'"
     },
 
-    "clock": {
-        "interval": 1,
-        "format": "{:%H:%M:%S}"
-    },
-
+  "clock": {
+    "format": "{:%Y-%m-%d %H:%M}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+        "mode": "year",
+        "mode-mon-col": 3,
+        "weeks-pos": "right",
+        "format": {
+            "months": "<span color='#ffead3'><b>{}</b></span>",
+            "days": "<span color='#ecc6d9'><b>{}</b></span>",
+            "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+            "today": "<span color='#ff6666'><b><u>{}</u></b></span>"
+        }
+    }
+},
     "cpu": {
         "format": "CPU: {usage}%"
     },
