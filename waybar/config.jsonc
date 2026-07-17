@@ -4,7 +4,20 @@
     "height": 30,
     "modules-left": ["network"],
     "modules-center": ["clock"], 
-    "modules-right": [  "pulseaudio", "cpu", "battery", "tray"],
+    "modules-right": [ "custom/ghostty", "custom/firefox", "pulseaudio", "cpu", "battery", "tray"],
+
+    "custom/firefox": {
+        "format": "🦊",
+        "tooltip": "Launch Firefox",
+        "on-click": "sh -c 'firefox & disown'"
+    },
+
+
+    "custom/ghostty": {
+        "format": "👻",
+        "tooltip": "Launch Ghostty",
+        "on-click": "sh -c 'ghostty & disown'"
+    },
 
     "clock": {
         "interval": 1,
