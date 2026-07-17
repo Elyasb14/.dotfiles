@@ -22,11 +22,11 @@
 ------------------
 
 -- See https://wiki.hypr.land/Configuring/Basics/Monitors/
+
 hl.monitor({
-    output   = "",
+    output   = "DP-8",
     mode     = "preferred",
-    position = "auto",
-    scale    = "auto",
+    scale    = "1",
 })
 
 
@@ -279,6 +279,8 @@ hl.bind(
 )
 
 hl.bind("SUPER + S", hl.dsp.layout("swapsplit"))
+hl.bind("SUPER + G", hl.dsp.exec_cmd("gimp"))
+hl.bind("SUPER + K", hl.dsp.exec_cmd("grim"))
 hl.bind("SUPER + L", hl.dsp.exec_cmd("hyprlock"))
 hl.bind("SUPER + SHIFT + M", hl.dsp.exec_cmd("networkmanager"))
 hl.bind("SUPER + SHIFT + Q", hl.dsp.exec_cmd("firefox"))
