@@ -29,7 +29,6 @@ hl.monitor({
     scale    = "1",
 })
 
-
 ---------------------
 ---- MY PROGRAMS ----
 ---------------------
@@ -102,8 +101,8 @@ hl.permission("/usr/(bin|local/bin)/hyprpm", "plugin", "allow")
 -- Refer to https://wiki.hypr.land/Configuring/Basics/Variables/
 hl.config({
     general = {
-        gaps_in  = 5,
-        gaps_out = 20,
+        gaps_in  = 1,
+        gaps_out = 5,
 
         border_size = 2,
 
@@ -280,7 +279,7 @@ hl.bind(
 
 hl.bind("SUPER + S", hl.dsp.layout("swapsplit"))
 hl.bind("SUPER + G", hl.dsp.exec_cmd("gimp"))
-hl.bind("SUPER + K", hl.dsp.exec_cmd("grim"))
+hl.bind("SUPER + K", hl.dsp.exec_cmd("GRIM_DEFAULT_DIR=~/screenshots grim"))
 hl.bind("SUPER + L", hl.dsp.exec_cmd("hyprlock"))
 hl.bind("SUPER + SHIFT + M", hl.dsp.exec_cmd("networkmanager"))
 hl.bind("SUPER + SHIFT + Q", hl.dsp.exec_cmd("firefox"))
