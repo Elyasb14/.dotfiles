@@ -277,7 +277,6 @@ hl.bind(
     })
 )
 
-hl.bind("SUPER + S", hl.dsp.layout("swapsplit"))
 hl.bind("SUPER + G", hl.dsp.exec_cmd("gimp"))
 hl.bind("SUPER + K", hl.dsp.exec_cmd("GRIM_DEFAULT_DIR=~/screenshots grim"))
 hl.bind("SUPER + L", hl.dsp.exec_cmd("hyprlock"))
