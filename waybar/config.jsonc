@@ -2,10 +2,19 @@
     "layer": "top",
     "position": "top",
     "height": 30,
-    "modules-left": ["network"],
+    "modules-left": ["hyprland/workspaces", "network"],
     "modules-center": ["clock"], 
     "modules-right": [ "custom/openvpn",
     "custom/wireguard","custom/ghostty", "custom/firefox", "pulseaudio", "cpu", "battery", "tray"],
+
+    "hyprland/workspaces": {
+        "on-click": "activate",
+        "format": "•",
+        "persistent-workspaces": {
+            "*": 5
+        },
+        "disable-scroll": true
+    },
 
     "custom/firefox": {
         "format": "🦊",

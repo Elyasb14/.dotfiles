@@ -5,6 +5,25 @@
     font-size: 14px;
 }
 
+#workspaces {
+    margin-right: 14px;
+}
+
+#workspaces button {
+    all: unset;
+    padding: 0 4px;
+    color: rgba(255,255,255,0.18);
+    font-size: 18px;
+}
+
+#workspaces button.active {
+    color: rgba(255,255,255,0.95);
+}
+
+#workspaces button:hover {
+    color: rgba(255,255,255,0.45);
+}
+
 window#waybar {
     background: #11111b;
     color: #cdd6f4;
