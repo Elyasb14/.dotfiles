@@ -278,6 +278,7 @@ hl.bind(
 )
 
 hl.bind("SUPER + G", hl.dsp.exec_cmd("gimp"))
+hl.bind("SUPER + SHIFT + L", hl.dsp.exec_cmd("hyprlock"))
 hl.bind("SUPER + K", hl.dsp.exec_cmd("GRIM_DEFAULT_DIR=~/screenshots grim"))
 hl.bind("SUPER + SHIFT + M", hl.dsp.exec_cmd("networkmanager"))
 hl.bind("SUPER + B", hl.dsp.exec_cmd("firefox"))
