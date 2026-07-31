@@ -49,9 +49,8 @@ local menu        = "hyprlauncher"
 -- Or execute your favorite apps at launch like this:
 --
 hl.on("hyprland.start", function () 
-   hl.exec_cmd(terminal)
    hl.exec_cmd("nm-applet")
-   hl.exec_cmd("waybar & hyprpaper & firefox")
+   hl.exec_cmd("waybar & hyprpaper")
  end)
 
 
@@ -245,6 +244,7 @@ hl.config({
 
         touchpad = {
             natural_scroll = false,
+	    tap_to_click = false,
         },
     },
 })
@@ -283,7 +283,7 @@ hl.bind("SUPER + K", hl.dsp.exec_cmd("GRIM_DEFAULT_DIR=~/screenshots grim"))
 hl.bind("SUPER + SHIFT + M", hl.dsp.exec_cmd("networkmanager"))
 hl.bind("SUPER + B", hl.dsp.exec_cmd("firefox"))
 hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(terminal))
-local closeWindowBind = hl.bind(mainMod .. " + C", hl.dsp.window.close())
+hl.bind(mainMod .. " + C", hl.dsp.window.close())
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
