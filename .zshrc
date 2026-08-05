@@ -102,3 +102,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ta="tmux attach"
+alias td="tmux detach"
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
