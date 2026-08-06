@@ -5,6 +5,7 @@ vim.pack.add({
     'git@github.com:hrsh7th/cmp-nvim-lsp',
     'git@github.com:hrsh7th/cmp-path',
     'git@github.com:sainnhe/everforest',
+    'git@github.com:sirhcm/handarbeit.vim',
     'git@github.com:junegunn/fzf',
     'git@github.com:junegunn/fzf.vim'
 
@@ -54,7 +55,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 
 
 require('lsp')
-vim.cmd.colorscheme('everforest')
+vim.cmd.colorscheme('handarbeit')
 
 vim.pack.add({
     'https://github.com/MeanderingProgrammer/render-markdown.nvim',

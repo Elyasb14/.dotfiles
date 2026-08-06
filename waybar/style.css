@@ -46,9 +46,7 @@ window#waybar {
 }
 
 #custom-openvpn,
-#custom-wireguard,
-#custom-ghostty,
-#custom-firefox {
+#custom-wireguard {
     margin-left: 10px;  /* Adjust this pixel value to change the spacing size */
     margin-right: 10px; /* Adjust this pixel value to change the spacing size */
 }
