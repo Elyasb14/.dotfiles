@@ -42,9 +42,6 @@ ts.setup({
     build = ':TSUpdate',
 })
 
-
-
--- highlight what you copied
 vim.api.nvim_create_autocmd('TextYankPost', {
     desc = 'Highlight when yanking (copying) text',
     group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
@@ -53,11 +50,10 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     end,
 })
 
-
 require('lsp')
 vim.cmd.colorscheme('handarbeit')
 
 vim.pack.add({
     'https://github.com/MeanderingProgrammer/render-markdown.nvim',
 })
-require('render-markdown').setup({}) -- only mandatory if you want to set custom options
+require('render-markdown').setup({}) 
