@@ -20,6 +20,7 @@ setup_lsp('lua_ls', { 'lua-language-server' }, { 'lua' }, {
 }, { '.luarc.json', '.luarc.jsonc', '.git' })
 setup_lsp('zls', { 'zls' }, { 'zig', 'zir' }, {})
 setup_lsp('clangd', { 'clangd' }, { 'c' }, {})
+setup_lsp('gopls', { 'gopls' }, { 'go', 'gomod', 'gowork', 'gotmpl' }, {}, { 'go.work', 'go.mod', '.git' })
 setup_lsp('basedpyright', { 'basedpyright-langserver', '--stdio' }, { 'python' }, {},
     { 'pyproject.toml', 'setup.py', '.git' })
 
