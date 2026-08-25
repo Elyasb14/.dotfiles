@@ -14,6 +14,12 @@ local function setup_lsp(name, cmd, filetypes, settings, root_markers)
     vim.lsp.enable(name)
 end
 
+vim.filetype.add({
+    extension = {
+        h = "c",
+    },
+})
+
 setup_lsp('texlab', {'texlab'}, {'tex'}, {})
 setup_lsp('lua_ls', { 'lua-language-server' }, { 'lua' }, {
     Lua = { runtime = { version = 'LuaJIT' } }

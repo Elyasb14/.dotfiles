@@ -1,15 +1,19 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 30,
+    "height": 32,
+    "margin": "6 8 0",
     "modules-left": ["hyprland/workspaces", "network"],
-    "modules-center": ["clock"], 
-    "modules-right": [ "custom/openvpn",
-    "custom/wireguard", "pulseaudio", "cpu", "battery", "tray"],
+    "modules-center": ["clock"],
+    "modules-right": ["custom/openvpn", "custom/wireguard", "pulseaudio", "cpu", "battery", "tray"],
 
     "hyprland/workspaces": {
         "on-click": "activate",
-        "format": "•",
+        "format": "{icon}",
+        "format-icons": {
+            "active": "●",
+            "default": "○"
+        },
         "persistent-workspaces": {
             "*": 5
         },
@@ -27,13 +31,13 @@
     "custom/wireguard": {
         "interval": 3,
         "format": "{}",
-        "exec": "nmcli -t -f NAME,STATE connection show --active | grep -q '^WG-Elyas-MR241:' && echo '🛡️ WG Active' || echo '🌐 WG Off'",
+        "exec": "nmcli -t -f NAME,STATE connection show --active | grep -q '^WG-Elyas-MR241:' && echo 'WG Active' || echo 'WG Off'",
         "on-click": "nmcli connection show --active | grep -q '^WG-Elyas-MR241' && nmcli connection down WG-Elyas-MR241|| nmcli connection up WG-Elyas-MR241",
         "tooltip": false
     },
 
-  "clock": {
-    "format": "{:%Y-%m-%d %H:%M}",
+    "clock": {
+        "format": "{:%a %d %b  %H:%M}",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
         "mode": "year",
@@ -48,21 +52,24 @@
     }
 },
     "cpu": {
-        "format": "CPU: {usage}%"
+        "format": "CPU {usage}%",
+        "interval": 5
     },
 
     "network": {
-        "format": "{ifname}: {ipaddr}/{cidr} {signaldBm}dBm"
+        "format": "{ifname}  {ipaddr}/{cidr}  {signaldBm} dBm",
+        "tooltip-format": "{ifname}: {essid} ({signalStrength}%)"
     },
 
     "battery": {
-        "format": "Battery: {capacity}% {icon}",
+        "format": "{capacity}% {icon}",
         "format-icons": ["", "", "", "", ""],
         "format-charging": " {capacity}%", 
         "format-plugged": " {capacity}%",
     },
 
     "pulseaudio": {
-        "format": "Vol: {volume}%"
+        "format": "{volume}%",
+        "format-muted": "muted"
     }
 }
