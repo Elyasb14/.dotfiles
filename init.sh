@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 NVIM="$PWD/nvim"
 TMUX="$PWD/.tmux.conf"
 HYPR="$PWD/hypr"
@@ -19,3 +19,5 @@ ln -s "$HYPR" ~/.config/hypr
 ln -s "$WAYBAR" ~/.config/waybar
 ln -s "$BASHRC" ~/.bashrc
 ln -s "$ZSHRC" ~/.zshrc
+
+chsh -s /bin/zsh $USER 
