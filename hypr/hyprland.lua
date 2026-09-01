@@ -270,10 +270,13 @@ hl.device({
 local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 
 -- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
+-- Toggle fullscreen for the active window. Waybar is configured to remain visible.
 hl.bind(
     "SUPER + F",
     hl.dsp.window.fullscreen({
         action = "toggle",
+        -- Internal fullscreen only: maximize without putting Firefox into F11-like fullscreen.
+        mode = 1,
     })
 )
 

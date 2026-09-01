@@ -1,5 +1,6 @@
 {
     "layer": "top",
+    "hide-on-fullscreen": false,
     "position": "top",
     "height": 32,
     "margin": "6 8 0",
