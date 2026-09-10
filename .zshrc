@@ -106,4 +106,6 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Pi
+alias ta="tmux attach"
+alias td="tmux detach"
 export PATH="/home/ebianchi/.local/share/pi-node/node-v22.23.2-linux-x64/bin:$PATH"
