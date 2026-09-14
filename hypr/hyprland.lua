@@ -49,9 +49,9 @@ local menu        = "hyprlauncher"
 -- Or execute your favorite apps at launch like this:
 --
 hl.on("hyprland.start", function () 
-   hl.exec_cmd("nm-applet")
-   hl.exec_cmd("waybar & hyprpaper")
- end)
+    hl.exec_cmd("nm-applet")
+    hl.exec_cmd("waybar & hyprpaper")
+end)
 
 
 -------------------------------
