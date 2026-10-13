@@ -13,8 +13,8 @@ window#waybar {
 #workspaces,
 #network,
 #clock,
-#custom-openvpn,
-#custom-wireguard,
+/* #custom-openvpn, */
+/* #custom-wireguard, */
 #pulseaudio,
 #cpu,
 #battery,
@@ -27,8 +27,8 @@ window#waybar {
 
 #network:hover,
 #clock:hover,
-#custom-openvpn:hover,
-#custom-wireguard:hover,
+/* #custom-openvpn:hover, */
+/* #custom-wireguard:hover, */
 #pulseaudio:hover,
 #cpu:hover,
 #battery:hover,
@@ -73,18 +73,18 @@ window#waybar {
     color: #d6a85f;
 }
 
-#custom-openvpn,
-#custom-wireguard {
-    color: #9fb5a0;
-}
+/* #custom-openvpn, */
+/* #custom-wireguard { */
+/*     color: #9fb5a0; */
+/* } */
 
-#custom-wireguard {
-    background-image: url("wireguard.svg");
-    background-position: 10px center;
-    background-repeat: no-repeat;
-    background-size: 15px;
-    padding-left: 32px;
-}
+/* #custom-wireguard { */
+/*     background-image: url("wireguard.svg"); */
+/*     background-position: 10px center; */
+/*     background-repeat: no-repeat; */
+/*     background-size: 15px; */
+/*     padding-left: 32px; */
+/* } */
 
 #pulseaudio {
     color: #c6a0d8;
